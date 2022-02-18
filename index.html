@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple reals</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Two +Tone|Material+Icons+Filled|Material+Icons+Outlined"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="row mt-5 pt-5">
+        <div class="col-lg-6 col-sm-12 margin">
+            <div class="heading">
+                <h3>Seeds</h3>
+            </div>
+            <div class="seeds_section">
+                <div class="seeds_card">
+                    <a class="add_video" href="{{ url('donor/seedsupload') }}">
+                        <div class="seeds_add_card d-flex justify-content-center align-items-center">
+                            <div class="text-center">
+                                <i class="material-icons-outlined">
+                                    add
+                                </i>
+                                <p> Add Seeds</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="seed_video_card">
+                        <div class="video">
+                            <video src="VID-20191021-WA0008.mp4" class="video_play"></video>
+                        </div>
+                        <div class="video_text">
+                            <p>Cause: <span>Child Development</span></p>
+                        </div>
+                    </div>
+                    <div class="seed_video_card">
+                        <div class="video">
+                            <video src="song.mp4" class="video_play"></video>
+                        </div>
+                        <div class="video_text">
+                            <p>Cause: <span>Child Development</span></p>
+                        </div>
+                    </div>
+                    <div class="seed_video_card">
+                        <div class="video">
+                            <video src="song1.mp4" class="video_play"></video>
+                        </div>
+                        <div class="video_text">
+                            <p>Cause: <span>Child Development</span></p>
+                        </div>
+                    </div>
+                    <div class="seed_video_card">
+                        <div class="video">
+                            <video src="VID-20190402-WA0004.mp4" class="video_play"></video>
+                        </div>
+                        <div class="video_text">
+                            <p>Cause: <span>Child Development</span></p>
+                        </div>
+                    </div>
+                    <div class="seed_video_card">
+                        <div class="video">
+                            <video src="VID-20190930-WA0011.mp4" class="video_play"></video>
+                        </div>
+                        <div class="video_text">
+                            <p>Cause: <span>Child Development</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+
+
+
+    <div class="seeds_video_section_mobile_view">
+        <div class="back_button">
+            <i onclick="CloseMobileSeeds()" class="material-icons">arrow_back</i>
+        </div>
+        <div class="mobile_seed_video">
+            <div class="movile_video">
+                <video id="clicked_video" src="VID-20191021-WA0008.mp4"
+                    class="mobile_video_play"></video>
+            </div>
+    
+            <div class="mobile_video_text d-flex justify-content-between align-items-center">
+                <div class="user_img">
+                    <img src="{{ asset('images/profilePics/6177bf223306a.jpg') }}" alt="">
+                </div>
+                <div class="video_username">
+                    <p>Roshan sharma</p>
+                    <p>Cause: <span>Child Development</span></p>
+                </div>
+            </div>
+            <div class="video_icons">
+                <div class="clap">
+                    <img src="{{ asset('images/icons/clap.svg') }}" alt="">
+                </div>
+                <div class="share mt-3">
+                    <img src="{{ asset('images/icons/share.svg') }}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="mobile_seed_video">
+            <div class="movile_video">
+                <video src="VID-20190402-WA0004.mp4" class="mobile_video_play"></video>
+            </div>
+    
+            <div class="mobile_video_text d-flex justify-content-between align-items-center">
+                <div class="user_img">
+                    <img src="{{ asset('images/profilePics/6177bf223306a.jpg') }}" alt="">
+                </div>
+                <div class="video_username">
+                    <p>Roshan sharma</p>
+                    <p>Cause: <span>Child Development</span></p>
+                </div>
+            </div>
+            <div class="video_icons">
+                <div class="clap">
+                    <img src="{{ asset('images/icons/clap.svg') }}" alt="">
+                </div>
+                <div class="share mt-3">
+                    <img src="{{ asset('images/icons/share.svg') }}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="mobile_seed_video">
+            <div class="movile_video">
+                <video src="song.mp4" class="mobile_video_play"></video>
+            </div>
+    
+            <div class="mobile_video_text d-flex justify-content-between align-items-center">
+                <div class="user_img">
+                    <img src="{{ asset('images/profilePics/6177bf223306a.jpg') }}" alt="">
+                </div>
+                <div class="video_username">
+                    <p>Roshan sharma</p>
+                    <p>Cause: <span>Child Development</span></p>
+                </div>
+            </div>
+            <div class="video_icons">
+                <div class="clap">
+                    <img src="{{ asset('images/icons/clap.svg') }}" alt="">
+                </div>
+                <div class="share mt-3">
+                    <img src="{{ asset('images/icons/share.svg') }}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="mobile_seed_video">
+            <div class="movile_video">
+                <video src="song1.mp4" class="mobile_video_play"></video>
+            </div>
+    
+            <div class="mobile_video_text d-flex justify-content-between align-items-center">
+                <div class="user_img">
+                    <img src="{{ asset('images/profilePics/6177bf223306a.jpg') }}" alt="">
+                </div>
+                <div class="video_username">
+                    <p>Roshan sharma</p>
+                    <p>Cause: <span>Child Development</span></p>
+                </div>
+            </div>
+            <div class="video_icons">
+                <div class="clap">
+                    <img src="{{ asset('images/icons/clap.svg') }}" alt="">
+                </div>
+                <div class="share mt-3">
+                    <img src="{{ asset('images/icons/share.svg') }}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="mobile_seed_video">
+            <div class="movile_video">
+                <video src="VID-20190930-WA0011.mp4" class="mobile_video_play"></video>
+            </div>
+    
+            <div class="mobile_video_text d-flex justify-content-between align-items-center">
+                <div class="user_img">
+                    <img src="{{ asset('images/profilePics/6177bf223306a.jpg') }}" alt="">
+                </div>
+                <div class="video_username">
+                    <p>Roshan sharma</p>
+                    <p>Cause: <span>Child Development</span></p>
+                </div>
+            </div>
+            <div class="video_icons">
+                <div class="clap">
+                    <img src="{{ asset('images/icons/clap.svg') }}" alt="">
+                </div>
+                <div class="share mt-3">
+                    <img src="{{ asset('images/icons/share.svg') }}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="mobile_seed_video">
+            <div class="movile_video">
+                <video src="Motivational.mp4" class="mobile_video_play"></video>
+            </div>
+    
+            <div class="mobile_video_text d-flex justify-content-between align-items-center">
+                <div class="user_img">
+                    <img src="{{ asset('images/profilePics/6177bf223306a.jpg') }}" alt="">
+                </div>
+                <div class="video_username">
+                    <p>Roshan sharma</p>
+                    <p>Cause: <span>Child Development</span></p>
+                </div>
+            </div>
+            <div class="video_icons">
+                <div class="clap">
+                    <img src="{{ asset('images/icons/clap.svg') }}" alt="">
+                </div>
+                <div class="share mt-3">
+                    <img src="{{ asset('images/icons/share.svg') }}" alt="">
+                </div>
+            </div>
+        </div>
+    
+    
+    </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
