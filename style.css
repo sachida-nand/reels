@@ -780,7 +780,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 		position: absolute;
 		font-size: 16px;
 		padding-left: 14px;
-		bottom: 300px;
+		bottom: 100px;
 		left: 0;
 		color: #FFFF;
 	}
